@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-03T16:23:06 IST" name="PHPTravels Suite" finished-at="2025-09-03T16:34:05 IST" duration-ms="658625">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.registrationRunner@305b7c14]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.searchRunner@21b2e768]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.bookingRunner@2118cddf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-09-03T16:23:06 IST" name="Registration First" finished-at="2025-09-03T16:28:31 IST" duration-ms="325317">
+      <class name="runner.registrationRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.registrationRunner@305b7c14]" started-at="2025-09-03T16:23:06 IST" name="setUpClass" finished-at="2025-09-03T16:23:07 IST" duration-ms="1265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@603c2dee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.registrationRunner@305b7c14]" started-at="2025-09-03T16:23:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:24:26 IST" duration-ms="78959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid Registration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.registrationRunner@305b7c14]" started-at="2025-09-03T16:24:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:25:49 IST" duration-ms="82465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Missing mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.registrationRunner@305b7c14]" started-at="2025-09-03T16:25:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:26:08 IST" duration-ms="18726" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Invalid email address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Registration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //button[@title='Select Country'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\Asish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50461/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cef805e589037e313da8204795bf3a08]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[@title='Select Country'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\Asish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50461/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cef805e589037e313da8204795bf3a08
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.BasePage.click(BasePage.java:18)
+at pages.RegistrationPage.register(RegistrationPage.java:33)
+at stepdefinitions.RegistrationSteps.user_enters_invalid_email(RegistrationSteps.java:52)
+at ✽.user enters invalid email "invalidEmail.com"(file:///C:/Users/Asish/phptravel/phptravels-automation/src/test/resources/features/registration.feature:29)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.registrationRunner@305b7c14]" started-at="2025-09-03T16:26:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:27:20 IST" duration-ms="72119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Weak password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.registrationRunner@305b7c14]" started-at="2025-09-03T16:27:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:28:31 IST" duration-ms="70817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Phone number longer than 10 digits"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.registrationRunner@305b7c14]" started-at="2025-09-03T16:28:31 IST" name="tearDownClass" finished-at="2025-09-03T16:28:31 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.registrationRunner -->
+    </test> <!-- Registration First -->
+    <test started-at="2025-09-03T16:28:31 IST" name="Search Second" finished-at="2025-09-03T16:30:58 IST" duration-ms="146310">
+      <class name="runner.searchRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.searchRunner@21b2e768]" started-at="2025-09-03T16:28:31 IST" name="setUpClass" finished-at="2025-09-03T16:28:32 IST" duration-ms="112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@50d666a2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.searchRunner@21b2e768]" started-at="2025-09-03T16:28:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:29:10 IST" duration-ms="38656" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid Flight Search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Search"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name='to'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\Asish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50560/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8726f99ef194c6f5ceb052f83666ab15]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name='to'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\Asish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50560/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8726f99ef194c6f5ceb052f83666ab15
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.FlightSearchPage.searchFlight(FlightSearchPage.java:46)
+at stepdefinitions.FlightSearchSteps.user_searches_for_a_flight(FlightSearchSteps.java:32)
+at ✽.user searches for a flight(file:///C:/Users/Asish/phptravel/phptravels-automation/src/test/resources/features/flightsearch.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.searchRunner@21b2e768]" started-at="2025-09-03T16:29:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:29:44 IST" duration-ms="33681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search flight with blank departure"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.searchRunner@21b2e768]" started-at="2025-09-03T16:29:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:30:14 IST" duration-ms="29625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search flight with blank arrival"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.searchRunner@21b2e768]" started-at="2025-09-03T16:30:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:30:58 IST" duration-ms="43883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search flight with more than 10 adults"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.searchRunner@21b2e768]" started-at="2025-09-03T16:30:58 IST" name="tearDownClass" finished-at="2025-09-03T16:30:58 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.searchRunner -->
+    </test> <!-- Search Second -->
+    <test started-at="2025-09-03T16:30:58 IST" name="Booking Last" finished-at="2025-09-03T16:34:05 IST" duration-ms="186803">
+      <class name="runner.bookingRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.bookingRunner@2118cddf]" started-at="2025-09-03T16:30:58 IST" name="setUpClass" finished-at="2025-09-03T16:30:58 IST" duration-ms="121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f6906f4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.bookingRunner@2118cddf]" started-at="2025-09-03T16:30:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:32:09 IST" duration-ms="71535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Book a flight with PayPal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Booking"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.bookingRunner@2118cddf]" started-at="2025-09-03T16:32:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:33:04 IST" duration-ms="54615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Leave mandatory booking fields blank"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Booking"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.bookingRunner@2118cddf]" started-at="2025-09-03T16:33:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T16:34:04 IST" duration-ms="60140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter invalid passport number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flight Booking"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.bookingRunner@2118cddf]" started-at="2025-09-03T16:34:04 IST" name="tearDownClass" finished-at="2025-09-03T16:34:05 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.bookingRunner -->
+    </test> <!-- Booking Last -->
+  </suite> <!-- PHPTravels Suite -->
+</testng-results>
